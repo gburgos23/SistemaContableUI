@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|c:\\users\\user\\source\\repos\\sistemacontableui\\sistemacontableui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|solutionrelative:sistemacontableui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaContableUI\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Program.cs",
+              "RelativeToolTip": "SistemaContableUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T22:03:43.949Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
