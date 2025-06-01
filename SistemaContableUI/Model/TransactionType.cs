@@ -1,7 +1,7 @@
 ﻿
 namespace SistemaContableUI.Model
 {
-    internal enum TransactionType
+    public enum TransactionType
     {
         Ingreso,
         Egreso 
