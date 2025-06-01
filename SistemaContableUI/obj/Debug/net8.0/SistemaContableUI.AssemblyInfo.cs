@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaContableUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4762d53dfbbde5a08686a43ebea3906cbad728c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d752154e04fa1b85dabe7b7a5f26e0625112f2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaContableUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaContableUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

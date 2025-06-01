@@ -17,7 +17,7 @@ namespace SistemaContableUI.Service.Balance
         private readonly IExpenseCalculator _expenseCalculator = expenseCalculator;
         private readonly ITransactionStore _transactionStore = transactionStore;
 
-        public string GetBalance()
+        public void GetBalance()
         {
             var income = _incomeCalculator.Calculate();
             var expense = _expenseCalculator.Calculate();
@@ -26,11 +26,11 @@ namespace SistemaContableUI.Service.Balance
 
             var totalTax = CalculateTotalTax(tax);
 
-            return
+            Console.WriteLine(
                 $"Total, ingresos: ${income:N0}\n" +
                 $"Total, egresos: ${expense:N0}\n" +
                 $"Balance: ${balance:N0}\n" +
-                $"IVA ({tax}%): ${totalTax:N0}";
+                $"IVA ({tax}%): ${totalTax:N0}");
         }
 
         private decimal CalculateTotalTax(int tax)

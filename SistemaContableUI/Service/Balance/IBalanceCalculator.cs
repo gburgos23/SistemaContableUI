@@ -2,6 +2,6 @@
 {
     public interface IBalanceCalculator
     {
-        string GetBalance();
+        void GetBalance();
     }
 }

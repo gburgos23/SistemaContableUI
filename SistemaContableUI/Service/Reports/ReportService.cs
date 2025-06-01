@@ -36,7 +36,7 @@ namespace SistemaContableUI.Service.Reports
             var basePath = ConfigurationManager.AppSettings["ReportBasePath"] ?? "C://Reports";
             string content = GenerateReport(type, reportTitle);
 
-            var path = Path.Combine(basePath, reportTitle, ReportType.JSON);
+            var path = Path.Combine(basePath, DateTime.Now.ToString("yyyy-MM-dd"), $"{reportTitle}.{ReportType.JSON}");
 
             var directory = Path.GetDirectoryName(path);
             if (!Directory.Exists(directory))

@@ -107,7 +107,7 @@ namespace SistemaContableUI.Service
                             {
                                 Console.WriteLine("=== SUBMENÚ REPORTES ===");
                                 Console.WriteLine("1. Generar reporte en CSV");
-                                Console.WriteLine("2. Generar reporte en HTML"); 
+                                Console.WriteLine("2. Generar reporte en HTML");
                                 Console.WriteLine("3. Generar reporte en JSON");
                                 Console.WriteLine("4. Generar reporte en Excel");
                                 Console.WriteLine("0. Volver al menú principal");
@@ -191,7 +191,7 @@ namespace SistemaContableUI.Service
                                         break;
                                     case "4":
                                         reportTitle = $"ReporteTransacciones - {DateTime.Now:yyyy-MM-dd}";
-                                        _reportService.GenerateReport(ReportType.EXCEL, reportTitle);
+                                        Console.WriteLine(_reportService.GenerateReport(ReportType.EXCEL, reportTitle));
                                         break;
                                     case "0":
                                         backFromReports = true;
