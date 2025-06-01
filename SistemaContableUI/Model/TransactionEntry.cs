@@ -11,7 +11,7 @@ namespace SistemaContableUI.Model
         public string Description { get; set; }
 
         [JsonPropertyName("monto")]
-        public float Amount { get; set; }
+        public decimal Amount { get; set; }
 
         [JsonPropertyName("tipoTransaccion")]
         [JsonConverter(typeof(JsonStringEnumConverter))]

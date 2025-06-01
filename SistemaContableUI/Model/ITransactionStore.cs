@@ -7,7 +7,6 @@ namespace SistemaContableUI.Model
         void ClearAll();
         IEnumerable<TransactionEntry> GetAllEntries();
         TransactionEntry? GetEntryByNumber(int transactionNumber);
-        decimal GetTotalAmount();
         bool RemoveEntry(int transactionNumber);
     }
 }

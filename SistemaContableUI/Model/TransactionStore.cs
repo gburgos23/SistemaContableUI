@@ -32,14 +32,10 @@ namespace SistemaContableUI.Model
             return _entries.FirstOrDefault(e => e.TransactionNumber == transactionNumber);
         }
 
-        public decimal GetTotalAmount()
-        {
-            return (decimal)_entries.Sum(e => e.Amount);
-        }
-
         public void ClearAll()
         {
             _entries.Clear();
+            _nextTransactionNumber = 1;
         }
 
     }
