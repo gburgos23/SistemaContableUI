@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|c:\\users\\user\\source\\repos\\sistemacontableui\\sistemacontableui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|solutionrelative:sistemacontableui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|c:\\users\\user\\source\\repos\\sistemacontableui\\sistemacontableui\\model\\reporttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|solutionrelative:sistemacontableui\\model\\reporttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|c:\\users\\user\\source\\repos\\sistemacontableui\\sistemacontableui\\model\\transactionstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|solutionrelative:sistemacontableui\\model\\transactionstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|c:\\users\\user\\source\\repos\\sistemacontableui\\sistemacontableui\\model\\transactionentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|solutionrelative:sistemacontableui\\model\\transactionentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|c:\\users\\user\\source\\repos\\sistemacontableui\\sistemacontableui\\model\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD003286-C849-483C-A9C5-33DE7BB72E5C}|SistemaContableUI\\SistemaContableUI.csproj|solutionrelative:sistemacontableui\\model\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Program.cs",
-              "RelativeDocumentMoniker": "SistemaContableUI\\Program.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Program.cs",
-              "RelativeToolTip": "SistemaContableUI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TransactionStore.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Model\\TransactionStore.cs",
+              "RelativeDocumentMoniker": "SistemaContableUI\\Model\\TransactionStore.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Model\\TransactionStore.cs",
+              "RelativeToolTip": "SistemaContableUI\\Model\\TransactionStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T22:03:43.949Z",
+              "WhenOpened": "2025-06-01T01:31:02.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionEntry.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Model\\TransactionEntry.cs",
+              "RelativeDocumentMoniker": "SistemaContableUI\\Model\\TransactionEntry.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Model\\TransactionEntry.cs",
+              "RelativeToolTip": "SistemaContableUI\\Model\\TransactionEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T01:23:20.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReportType.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Model\\ReportType.cs",
+              "RelativeDocumentMoniker": "SistemaContableUI\\Model\\ReportType.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Model\\ReportType.cs",
+              "RelativeToolTip": "SistemaContableUI\\Model\\ReportType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T22:27:07.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Model\\TransactionType.cs",
+              "RelativeDocumentMoniker": "SistemaContableUI\\Model\\TransactionType.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\SistemaContableUI\\SistemaContableUI\\Model\\TransactionType.cs",
+              "RelativeToolTip": "SistemaContableUI\\Model\\TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T22:26:40.815Z",
               "EditorCaption": ""
             }
           ]
