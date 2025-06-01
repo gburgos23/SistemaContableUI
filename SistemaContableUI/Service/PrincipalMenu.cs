@@ -5,6 +5,7 @@ using System.Text.Json;
 
 namespace SistemaContableUI.Service
 {
+    //test
     public class PrincipalMenu(IIncomeCalculator incomeCalculator,
         IExpenseCalculator expenseCalculator,
         IBalanceCalculator balanceCalculator,
