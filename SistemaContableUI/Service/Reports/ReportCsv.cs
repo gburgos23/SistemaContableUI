@@ -4,28 +4,22 @@ using System.Text;
 
 namespace SistemaContableUI.Service.Reports
 {
-    public class ReportCsv : IReportGenerator
+    public class ReportCsv(TransactionStore store) : IReportGenerator
     {
-        private readonly TransactionStore _store;
-
-        public ReportCsv(TransactionStore store)
-        {
-            _store = store;
-        }
+        private readonly TransactionStore _store = store;
 
         public string GenerateReport(string title)
         {
             var data = _store.GetAllEntries().ToArray();
             var builder = new StringBuilder();
-            builder.AppendLine("Date,Description,Amount,Type");
+            builder.AppendLine("numeroTransaccion,descripcion,monto,tipoTransaccion,fechaTransaccion,pagaIva");
 
             foreach (var entry in data)
             {
-                builder.AppendLine($"{DateTime.Now:yyyy-MM-dd},{entry.Description},{entry.Amount},{entry.TransactionType}");
+                builder.AppendLine($"{entry.TransactionNumber},{entry.Description},{entry.Amount},{entry.TransactionType},{entry.TransactionDate},{(entry.isTaxed ? "SI" : "NO")}");
             }
 
             return builder.ToString();
         }
     }
-
 }

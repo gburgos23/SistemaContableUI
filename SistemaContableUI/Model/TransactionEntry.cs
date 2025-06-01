@@ -19,5 +19,7 @@ namespace SistemaContableUI.Model
 
         [JsonPropertyName("fechaTransaccion")]
         public DateTime TransactionDate { get; set; }
+        [JsonPropertyName("pagaIva")]
+        public bool isTaxed { get; set; }
     }
 }

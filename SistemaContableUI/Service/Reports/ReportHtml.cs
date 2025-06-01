@@ -21,7 +21,7 @@ namespace SistemaContableUI.Service.Reports
             foreach (var entry in data)
             {
                 string sign = entry.TransactionType == TransactionType.Ingreso ? "$" : "-$";
-                builder.AppendLine($"{entry.Description} - {sign}{entry.Amount:N0} ({entry.TransactionType})");
+                builder.AppendLine($"{entry.TransactionNumber} - {entry.TransactionDate} -> {entry.Description} - {sign}{entry.Amount:N0} ({entry.TransactionType})");
             }
 
             return builder.ToString();

@@ -3,7 +3,7 @@ using System.Configuration;
 
 namespace SistemaContableUI.Service.Reports
 {
-    public class ReportService
+    public class ReportService : IReportService
     {
         private readonly TransactionStore _store;
         private readonly Dictionary<string, IReportGenerator> _generators;
@@ -31,14 +31,19 @@ namespace SistemaContableUI.Service.Reports
             return _generators[type].GenerateReport(title);
         }
 
-        public void ExportToFile(string type, string title)
+        public void ExportToFile(string type, string reportTitle)
         {
-            string content = GenerateReport(type, title);
+            var basePath = ConfigurationManager.AppSettings["ReportBasePath"] ?? "C://Reports";
+            string content = GenerateReport(type, reportTitle);
 
-            string dir = Path.Combine(_basePath, title);
-            Directory.CreateDirectory(dir);
+            var path = Path.Combine(basePath, reportTitle, ReportType.JSON);
 
-            string path = Path.Combine(dir, $"{title}.{type}");
+            var directory = Path.GetDirectoryName(path);
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory!);
+            }
+
             File.WriteAllText(path, content);
         }
     }
