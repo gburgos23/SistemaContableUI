@@ -6,9 +6,9 @@ using System.Text;
 
 namespace SistemaContableUI.Service.Reports
 {
-    public class ReportHtml(TransactionStore store) : IReportGenerator
+    public class ReportHtml(ITransactionStore store) : IReportGenerator
     {
-        private readonly TransactionStore _store = store;
+        private readonly ITransactionStore _store = store;
 
         public string GenerateReport(string title)
         {

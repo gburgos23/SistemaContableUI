@@ -4,9 +4,9 @@ using System.Text;
 
 namespace SistemaContableUI.Service.Reports
 {
-    public class ReportCsv(TransactionStore store) : IReportGenerator
+    public class ReportCsv(ITransactionStore store) : IReportGenerator
     {
-        private readonly TransactionStore _store = store;
+        private readonly ITransactionStore _store = store;
 
         public string GenerateReport(string title)
         {

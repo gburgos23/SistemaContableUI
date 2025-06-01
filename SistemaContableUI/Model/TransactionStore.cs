@@ -8,6 +8,7 @@ namespace SistemaContableUI.Model
 
         public void AddEntry(TransactionEntry entry)
         {
+            entry.TransactionNumber = _nextTransactionNumber;   
             _entries.Add(entry);
             _nextTransactionNumber++;
         }
@@ -30,6 +31,11 @@ namespace SistemaContableUI.Model
         public TransactionEntry? GetEntryByNumber(int transactionNumber)
         {
             return _entries.FirstOrDefault(e => e.TransactionNumber == transactionNumber);
+        }
+
+        public List<TransactionEntry>? GetEntryByDescription(string description)
+        {
+            return [.. _entries.Where(e => e.Description.Contains(description, StringComparison.OrdinalIgnoreCase))];
         }
 
         public void ClearAll()

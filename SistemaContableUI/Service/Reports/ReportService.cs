@@ -5,11 +5,11 @@ namespace SistemaContableUI.Service.Reports
 {
     public class ReportService : IReportService
     {
-        private readonly TransactionStore _store;
+        private readonly ITransactionStore _store;
         private readonly Dictionary<string, IReportGenerator> _generators;
         private readonly string _basePath;
 
-        public ReportService(TransactionStore store)
+        public ReportService(ITransactionStore store)
         {
             _store = store;
             _basePath = ConfigurationManager.AppSettings["ReportBasePath"] ?? "C://Reports";
