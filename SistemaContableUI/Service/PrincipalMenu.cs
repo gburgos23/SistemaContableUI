@@ -121,7 +121,7 @@ namespace SistemaContableUI.Service
                                 {
                                     case "1":
                                         reportTitle = $"ReporteTransacciones - {DateTime.Now:yyyy-MM-dd}";
-                                        _reportService.GenerateReport(ReportType.CSV, reportTitle);
+                                        Console.Write(_reportService.GenerateReport(ReportType.CSV, reportTitle));
 
                                         do
                                         {
@@ -145,7 +145,7 @@ namespace SistemaContableUI.Service
                                         break;
                                     case "2":
                                         reportTitle = $"ReporteTransacciones - {DateTime.Now:yyyy-MM-dd}";
-                                        _reportService.GenerateReport(ReportType.HTML, reportTitle);
+                                        Console.Write(_reportService.GenerateReport(ReportType.HTML, reportTitle));
 
                                         do
                                         {
@@ -168,7 +168,7 @@ namespace SistemaContableUI.Service
                                         break;
                                     case "3":
                                         reportTitle = $"ReporteTransacciones - {DateTime.Now:yyyy-MM-dd}";
-                                        _reportService.GenerateReport(ReportType.JSON, reportTitle);
+                                        Console.Write(_reportService.GenerateReport(ReportType.JSON, reportTitle));
 
                                         do
                                         {
