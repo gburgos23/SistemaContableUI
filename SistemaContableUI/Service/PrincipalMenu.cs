@@ -5,9 +5,7 @@ using System.Text.Json;
 
 namespace SistemaContableUI.Service
 {
-    //test
-
-
+    // Trabajamos con inyección de dependencias para el menú principal
     public class PrincipalMenu(IIncomeCalculator incomeCalculator,
         IExpenseCalculator expenseCalculator,
         IBalanceCalculator balanceCalculator,
@@ -29,6 +27,7 @@ namespace SistemaContableUI.Service
             {
                 do
                 {
+                    // Limpiar la consola y mostrar el menú principal
                     Console.Clear();
                     Console.WriteLine("=== MENÚ PRINCIPAL ===");
                     Console.WriteLine("1. Agregar transacción");
@@ -58,6 +57,7 @@ namespace SistemaContableUI.Service
                             bool backFromBalance = false;
                             do
                             {
+                                // Mostrar el submenú de balance
                                 Console.WriteLine("=== SUBMENÚ BALANCE ===");
                                 Console.WriteLine("1. Ver total de ingresos");
                                 Console.WriteLine("2. Ver total de egresos");
@@ -108,6 +108,7 @@ namespace SistemaContableUI.Service
                             bool backFromReports = false;
                             do
                             {
+                                // Mostrar el submenú de reportes
                                 Console.WriteLine("=== SUBMENÚ REPORTES ===");
                                 Console.WriteLine("1. Generar reporte en CSV");
                                 Console.WriteLine("2. Generar reporte en HTML");

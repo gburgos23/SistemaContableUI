@@ -104,6 +104,7 @@ namespace SistemaContableUI.Service
             Console.WriteLine("Transacción agregada exitosamente.");
         }
 
+        // Imprime todas las transacciones almacenadas
         public void PrintAllTransactions()
         {
             var transactions = _transactionStore.GetAllEntries();
@@ -115,7 +116,7 @@ namespace SistemaContableUI.Service
             }
         }
 
-
+        //Imprime una transacción específica por su ID
         public void PrintTransactionById()
         {
             int searchId;
@@ -141,6 +142,7 @@ namespace SistemaContableUI.Service
             }
         }
 
+        //Imprime transacciones por descripción
         public void PrintTransactionByDescription()
         {
             string searchDescription;

@@ -2,6 +2,7 @@
 
 namespace SistemaContableUI.Model
 {
+    //Transacción que se registra en el sistema contable
     public class TransactionEntry
     {
         [JsonPropertyName("numeroTransaccion")]

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace SistemaContableUI.Service.Balance
 {
+    // Calcula el balance total de ingresos y egresos, incluyendo IVA
     public class BalanceCalculator(
         IIncomeCalculator incomeCalculator,
         IExpenseCalculator expenseCalculator,
@@ -32,7 +33,6 @@ namespace SistemaContableUI.Service.Balance
                 $"Balance: ${balance:N0}\n" +
                 $"IVA ({tax}%): ${totalTax:N0}");
         }
-
         private decimal CalculateTotalTax(int tax)
         {
             var transactions = _transactionStore.GetAllEntries();
